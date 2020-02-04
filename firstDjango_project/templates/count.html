@@ -1,0 +1,13 @@
+<h1>There are {{nwords}} words in your text</h1>
+<h1>Your text</h1></br>
+{{text}}
+</br>
+{{worddictionary}}
+</br>
+{{mostcommon}}<br>
+<a href="{% url 'home'%}">Start again</a>
+<br>
+{% for data in text %}
+{{data}}
+</br><br>
+{% endfor %}

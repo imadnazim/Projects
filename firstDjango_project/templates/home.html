@@ -1,0 +1,17 @@
+<h1>Hi Welcome to home page!!!</h1>
+{{author}}
+{{date}}
+
+<h1>Word Count</h1>
+<!-- <form action="count">  dont put count.html -->
+<form action="{% url 'count' %}">   <!-- to give url by name defin in urls.py-->
+  <textarea name="fulltext" rows="8" cols="80"></textarea>
+  </br>
+  <input type="submit" value="Count">
+
+</form>
+
+ <form action="{% url 'about' %}" >
+   <input type="submit" value="About">
+
+ </form>
